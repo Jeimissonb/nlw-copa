@@ -1,0 +1,321 @@
+{
+	"info": {
+		"_postman_id": "6d4992e2-d048-4764-a774-a70104d9385d",
+		"name": "nlw-copa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Guesses",
+			"item": [
+				{
+					"name": "Count Guesses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/guesses/count",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"guesses",
+								"count"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Guess",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmVpbWlzc29uIEJhcmJvc2EiLCJhdmF0YXJVcmwiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BTG01d3Uwa2YwVG9fWDM1ODFMQWd3SVB4YWl6X3BxNHBRWmV0Qjl0UU5FUXFBPXM5Ni1jIiwic3ViIjoiY2xhMnF0dW44MDAwMGpnbjAxeXptYjl0cSIsImlhdCI6MTY2NzU4MzYyOCwiZXhwIjoxNjY4MTg4NDI4fQ.P_pAE89R4lu_GDGPVJIb-CZNfXB7C1SWz-7NDlTjqBM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstTeamPoints\": 2,\r\n    \"secondTeamPoints\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/pools/cla2spkse0001jgw4ly7vo3pb/games/cl9ymmd0l0006jgyc1phvleg7/guesses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"pools",
+								"cla2spkse0001jgw4ly7vo3pb",
+								"games",
+								"cl9ymmd0l0006jgyc1phvleg7",
+								"guesses"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Count Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/users/count",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"users",
+								"count"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pools",
+			"item": [
+				{
+					"name": "Create Pools",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmVpbWlzc29uIEJhcmJvc2EiLCJhdmF0YXJVcmwiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BTG01d3Uwa2YwVG9fWDM1ODFMQWd3SVB4YWl6X3BxNHBRWmV0Qjl0UU5FUXFBPXM5Ni1jIiwic3ViIjoiY2xhMnF0dW44MDAwMGpnbjAxeXptYjl0cSIsImlhdCI6MTY2NzU4MzYyOCwiZXhwIjoxNjY4MTg4NDI4fQ.P_pAE89R4lu_GDGPVJIb-CZNfXB7C1SWz-7NDlTjqBM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\" : \"ssss\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/pools",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"pools"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Count Pools",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/pools/count",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"pools",
+								"count"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Pools",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmVpbWlzc29uIEJhcmJvc2EiLCJhdmF0YXJVcmwiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BTG01d3Uwa2YwVG9fWDM1ODFMQWd3SVB4YWl6X3BxNHBRWmV0Qjl0UU5FUXFBPXM5Ni1jIiwic3ViIjoiY2xhMnF0dW44MDAwMGpnbjAxeXptYjl0cSIsImlhdCI6MTY2NzU4MzYyOCwiZXhwIjoxNjY4MTg4NDI4fQ.P_pAE89R4lu_GDGPVJIb-CZNfXB7C1SWz-7NDlTjqBM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/pools",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"pools"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Pool",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmVpbWlzc29uIEJhcmJvc2EiLCJhdmF0YXJVcmwiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BTG01d3Uwa2YwVG9fWDM1ODFMQWd3SVB4YWl6X3BxNHBRWmV0Qjl0UU5FUXFBPXM5Ni1jIiwic3ViIjoiY2xhMnF0dW44MDAwMGpnbjAxeXptYjl0cSIsImlhdCI6MTY2NzU4MzYyOCwiZXhwIjoxNjY4MTg4NDI4fQ.P_pAE89R4lu_GDGPVJIb-CZNfXB7C1SWz-7NDlTjqBM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/pools/cla2spkse0001jgw4ly7vo3pb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"pools",
+								"cla2spkse0001jgw4ly7vo3pb"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Sign In / Sign Up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"access_token\":\r\n     \"ya29.a0AeTM1icLUe61WK8sFX6PhiYDOris7FB8JYwyXK83IIkOw1r-Fb7xqYWLBHlWdII-yh0TbjTj6Wlbs4FApt3-sh8UQBBiFG0MnU0_vmQrltBEMXcv72UIYCZ5-alImNinN0VCKoORyWdMF4QCBiwPq3uqchPIVwaCgYKAbkSARISFQHWtWOm7tB6B-7K_2W-6bkYPGQM3g0165\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Me",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmVpbWlzc29uIEJhcmJvc2EiLCJhdmF0YXJVcmwiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BTG01d3Uwa2YwVG9fWDM1ODFMQWd3SVB4YWl6X3BxNHBRWmV0Qjl0UU5FUXFBPXM5Ni1jIiwic3ViIjoiY2xhMnF0dW44MDAwMGpnbjAxeXptYjl0cSIsImlhdCI6MTY2NzU4MzYyOCwiZXhwIjoxNjY4MTg4NDI4fQ.P_pAE89R4lu_GDGPVJIb-CZNfXB7C1SWz-7NDlTjqBM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/me",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"me"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Games",
+			"item": [
+				{
+					"name": "List Games",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmVpbWlzc29uIEJhcmJvc2EiLCJhdmF0YXJVcmwiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BTG01d3Uwa2YwVG9fWDM1ODFMQWd3SVB4YWl6X3BxNHBRWmV0Qjl0UU5FUXFBPXM5Ni1jIiwic3ViIjoiY2xhMnF0dW44MDAwMGpnbjAxeXptYjl0cSIsImlhdCI6MTY2NzU4MzYyOCwiZXhwIjoxNjY4MTg4NDI4fQ.P_pAE89R4lu_GDGPVJIb-CZNfXB7C1SWz-7NDlTjqBM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/pools/cla2spkse0001jgw4ly7vo3pb/games",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"pools",
+								"cla2spkse0001jgw4ly7vo3pb",
+								"games"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
