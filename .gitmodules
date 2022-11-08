@@ -1,6 +1,0 @@
-[submodule "mobile"] 
-  path = mobile 
-  url = git@github.com:Jeimissonb/nlw-copa.git 
-[submodule "web"] 
-  path = web 
-  url = git@github.com:Jeimissonb/nlw-copa.git 
